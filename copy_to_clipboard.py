@@ -1,4 +1,6 @@
 from tkinter import Tk
+import pyperclip
+import time
 
 def tk_to_clipboard(string):
     """Copies to the system clipboard using Tkinter.
@@ -16,8 +18,13 @@ def tk_to_clipboard(string):
     tkobj.update()
     tkobj.destroy()
 
+def pyperclip_to_clipboard(string):
+    """Pyperclip method."""
+    pyperclip.copy(string)
+    
 def main():
-    tk_to_clipboard('test')
+    tk_to_clipboard('tkinter test')
+##    pyperclip_to_clipboard('pyperclip test')
 
 if __name__ == '__main__':
     main()
