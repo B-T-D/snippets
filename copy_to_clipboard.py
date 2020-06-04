@@ -1,6 +1,5 @@
 from tkinter import Tk
 import pyperclip
-import time
 
 def tk_to_clipboard(string):
     """Copies to the system clipboard using Tkinter.
@@ -24,7 +23,7 @@ def pyperclip_to_clipboard(string):
     
 def main():
     tk_to_clipboard('tkinter test')
-##    pyperclip_to_clipboard('pyperclip test')
+    pyperclip_to_clipboard('pyperclip test')
 
 if __name__ == '__main__':
     main()
