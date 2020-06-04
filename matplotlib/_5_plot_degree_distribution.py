@@ -20,9 +20,6 @@ def plot_degree_dist(network):
     deg_dist = degree_distribution(network)
     degree = list(deg_dist.keys())
     frequency = list(deg_dist.values())
-    for d in deg_dist:
-        degree.append(d)
-        frequency.append(deg_dist[d])
     pyplot.scatter(degree, frequency)
 ##    pyplot.plot(degree, frequency)
     pyplot.xlabel('Degree')
