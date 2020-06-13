@@ -4,7 +4,6 @@ def fibonacci(n):
     Runs in exponential time--asymptotically O(2^n). Because for every value
     of n, it recomputes fib(m) for every prior value m where m < n.
     """
-##    print(f"n = {n} in fib() call")
     if n == 0:
         return 0
     if n == 1:
