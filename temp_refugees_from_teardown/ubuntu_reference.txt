@@ -1,0 +1,3 @@
+Check for upgrades:
+	$ do-release-upgrade -c
+
